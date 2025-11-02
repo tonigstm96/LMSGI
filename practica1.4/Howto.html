@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Antonio Gutiérrez Simón">
+        <meta name="description" content="Práctica 1 HTML">
+        <title>Práctica 1</title>
+    </head>
+    <body>
+        <h1 id="inicio">LSMGI - Práctica 1 - HOW_TO</h1>
+        <h3>Mapa Web</h3>
+        <p>
+            <a href="http://localhost/LMSGI/practica1.4/home.html">Home</a> | 
+            <a href="http://localhost/LMSGI/practica1.4/Tablas.html">Tabla</a> | 
+            <a href="http://localhost/LMSGI/practica1.4/Formulario.html">Formulario</a> | 
+            <a href="http://localhost/LMSGI/practica1.4/Howto.html">How to</a> | 
+            <a href="https://www.google.es" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google" width="80" height="30">
+            </a>
+        </p>
+        <h2>Etiquetas que se han utilizado en la práctica</h2>
+        <ul> <!--En un principio había metido el resto de párrafos y <pre> como hijos de la lista desordenada, pero no me cuadraba mucho, aunque el formato quedaba igual que en el ejemplo. Según he buscado, los únicos hijos directos de <ul> tienen que ser <li> así que lo he dejado así.-->
+            <li>
+                <h3>Etiquetas básicas</h3>
+            </li>
+        </ul>       
+            <p>
+                &lt;head&gt;&lt;/head&gt;, &lt;body&gt;&lt;/body&gt;, &lt;p&gt;&lt;/p&gt;...      
+            </p>
+        <ul>
+            <li>
+                <h3>Tablas</h3>
+            </li>
+        </ul>
+            <pre>
+            &lt;table&gt;
+                &lt;caption&gt;Título&lt;/caption&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Elemento 1&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Elemento 2&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            </pre>
+        <ul>
+            <li>
+                <h3>Multimedia</h3>
+            </li>
+        </ul>   
+            <p>
+                &lt;audio src="..." controls&gt;&lt;/audio&gt;<br> 
+                &lt;video src="..." controls&gt;&lt;/video&gt;<br><!--Bueno, he cerrado este <video>, que estaba cerrado con </audio> también he cambiado alguna cosa del ejemplo, porque estaba mal, no se si era parte de la práctica.-->
+                ... 
+            </p>
+        <ul>
+            <li>
+                <h3>Formularios</h3>
+            </li>
+        </ul>
+            <p>
+                 &lt;input type="text"&gt;
+            </p>
+            <pre>
+            &lt;select name="bebida"&gt;<!--Aquí por ejemplo no había ningun option cerrado y el name en mayúscula-->
+                &lt;option selected&gt;Agua&lt;/option&gt;
+                &lt;option&gt;Cerveza&lt;/option&gt;
+                &lt;option value=refresco&gt;Refresco Gaseoso&lt;/option&gt;
+                &lt;option&gt;Vino&lt;/option&gt;
+                &lt;option&gt;Zumo&lt;/option&gt;
+             &lt;/select&gt;    
+            </pre>
+        <h2>Video explicativo de HTML</h2>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MJkdaVFHrto?si=jTZVTOdY3_PrVhQK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </p>
+    </body>
+</html>

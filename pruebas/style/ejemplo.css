@@ -1,0 +1,41 @@
+ *{
+    background-color: aquamarine;
+    color: red;
+    font-size: 100px;
+}
+/*hola soy un comentario*/
+.navegacion{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
+ul{
+    list-style: none;
+}
+
+li:nth-child(2){
+    color: black;
+}
+
+li:hover{
+    font-size: larger;
+}
+
+li a{
+    color: forestgreen;
+    text-decoration: none;
+    font-size: 34px;
+    padding: 50px;
+}
+
+.lorem::first-letter{
+    font-size: 300px;
+    color: white;
+}
+
+.caja{
+    border: 10px solid black;
+    padding: 20px;
+    margin-top: 100px;
+}
+

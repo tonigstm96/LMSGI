@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Antonio Gutiérrez Simón">
+        <meta name="description" content="Práctica 1 HTML">
+        <title>Práctica 1</title>
+        <style>
+            table,tr,th,td{
+                border: solid;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 id="inicio">LSMGI - Práctica 1 - TABLAS</h1>
+        <h3>Mapa Web</h3>
+       <p>
+            <a href="http://localhost/LMSGI/practica1.4/home.html">Home</a> | 
+            <a href="http://localhost/LMSGI/practica1.4/Tablas.html">Tabla</a> | 
+            <a href="http://localhost/LMSGI/practica1.4/Formulario.html">Formulario</a> | 
+            <a href="http://localhost/LMSGI/practica1.4/Howto.html">How to</a> | 
+            <a href="https://www.google.es" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google" width="80" height="30">
+            </a>
+        </p>
+        <table>
+            <caption>Productos</caption>
+            <thead>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Imagen</th>
+                    <th>Artículo</th>
+                    <th>Precios</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Monitores</td>
+                    <td>
+                        <img src="http://localhost/LMSGI/practica1.4/media/img/aoc24c.jpg" alt="Monitor AOC 24&quot; curvo" width="50" height="50">
+                    </td> <!--Aquí he usado una entidad html en la descripción alt para que no interprete las comillas como parte del código. Aprendí algunas en el curso que te comenté, no me acuerdo de memoria, por supuesto la he tenido que buscar-->
+                    <td>MONITOR AOC GAMING LED 24" CURVO 165hz FREESYNC</td> 
+                    <td>
+                        <ul>
+                            <li>
+                                <a href="https://microocasion.es/es/monitores-nuevos/1489-monitor-aoc-gaming-led-24-curvo--4038986148191.html" target="_blank">
+                                    <del>229,00€</del>
+                                </a><!--He usado y procuro usar _blank en todos los enlaces porque me da rabia que me abra los links en la página que estoy visitando-->
+                            </li>                           
+                            <li>
+                                <a href="https://amzn.eu/d/f9958UG" target="_blank">
+                                    <del>155,31€</del>
+                                </a>
+                            </li>
+                            <li><a href="https://www.pccomponentes.com/aoc-24g2spae-bk-238-led-ips-fullhd-165hz-freesync-premium?campaigntype=eshopping&campaignchannel=shopping&gad_source=1&gad_campaignid=21384349090&gclid=CjwKCAjwmNLHBhA4EiwA3ts3mbS09bAmMYathCWx4g70b-kr1-ZOuPp8cOHplHUyKBQAQ0dejU9pdRoCBy0QAvD_BwE" target="_blank">
+                                    135,91€
+                                </a>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="http://localhost/LMSGI/practica1.4/media/img/xiaomig27i.webp" alt="Monitor Xiaomi 27&quot;" width="50" height="50">
+                    </td>
+                    <td>Xiaomi Monitor G27i 27" FAST IPS 165hz</td>
+                    <td>
+                        <ul>
+                            <li>
+                                <a href="https://www.mediamarkt.es/es/product/_monitor-xiaomi-g27i-27-full-hd-ips-1ms-165-hz-displayport-14-negro-1565541.html" target="_blank">
+                                    <del>149,00€</del>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.mi.com/es/product/xiaomi-gaming-monitor-g27i/buy/" target="_blank">
+                                    <del>129,99€</del>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://amzn.eu/d/bvESIfR" target="_blank">
+                                    119,95€
+                                </a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="http://localhost/LMSGI/practica1.4/media/img/msi32.webp" alt="Monitor MSI 32&quot;" width="50" height="50"></td>
+                    <td>Monitor MSI MPG 321URX QD-OLED 31.5" QD-OLED UltraHD 4K 240Hz FreeSync Premium Pro USB-C</td>
+                    <td>
+                        <ul>
+                              <li>
+                                <a href="https://www.mediamarkt.es/es/product/_monitor-gaming-msi-mpg-321urx-315-uhd-4k-03-ms-240-hz-panel-quantum-dot-oled-negro-1579916.html" target="_blank">
+                                <del>994,00€</del>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.pccomponentes.com/monitor-msi-mpg-321urx-qd-oled-315-qd-oled-ultrahd-4k-240hz-freesync-premium-pro-usb-c" target="_blank">
+                                <del>989,00€</del>
+                                </a>
+                            </li>   
+                            <li>
+                                <a href="https://amzn.eu/d/2TsvD2m" target="_blank">
+                                929,43€
+                                </a>
+                            </li>
+                                        
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Procesadores</td>
+                        <td>
+                            <img src="http://localhost/LMSGI/practica1.4/media/img/ryzen8700f.webp" alt="Procesador Ryzen 7 8700f" width="50" height="50">
+                        </td>
+                        <td>Procesador AMD Ryzen 7 8700F 4.1/5GHz Box</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="https://www.pccomponentes.com/procesador-amd-ryzen-7-8700f-41-5ghz-box" target="_blank">
+                                    <del>259,70€</del>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://amzn.eu/d/3sBURHp" target="_blank">
+                                    <del>179,00€</del>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.coolmod.com/amd-ryzen-7-8700f-5-0ghz-socket-am5-tray/?gad_source=1&gad_campaignid=17623958386&gbraid=0AAAAAD_BC_Mo5xxlZ9y6zL-0bo4graMvz&gclid=CjwKCAjwmNLHBhA4EiwA3ts3mY_fTUNG84TQHp4ad_ej-lDejvd0VDqibfN6E5JPRgMrXgmphO1SVBoCvPMQAvD_BwE" target="_blank">   
+                                    169,95€
+                                    </a>
+                                </li>
+                            </ul>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="http://localhost/LMSGI/practica1.4/media/img/i58600k.webp" alt="Procesador Intel i5 8600k" width="50" height="50">
+                    </td>
+                    <td>Intel Core i5-8600K 3.6GHz BOX</td>
+                    <td>
+                        <ul>
+                            <li>
+                                <a href="https://amzn.eu/d/iJZfOEL" target="_blank">
+                                <del>255,66€</del>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.ebay.es/itm/257155896141?var=0&toolid=20006&customid=Gn0pzmMYOZzZEXCB6LLI7g" target="_blank">
+                                <del>188,62€</del>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://es.aliexpress.com/item/1005005166802369.html" target="_blank">   
+                                67,69€
+                                </a>
+                            </li>
+                         </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ratones</td>
+                    <td>
+                        <img src="http://localhost/LMSGI/practica1.4/media/img/xm1r.jpg" alt="Ratón gaming XM1r" width="50" height="50">
+                    </td>
+                    <td>Endgame Gear XM1r Ratón Gaming 19000 DPI Blanco</td>
+                     <td>
+                       <ul>
+                            <li>
+                                <a href="https://www.pccomponentes.com/endgame-gear-xm1r-raton-gaming-19000-dpi-blanco" target="_blank">
+                                <del>111,06€</del>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://amzn.eu/d/3O1AYcb" target="_blank">
+                                <del>65,96€</del>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.endgamegear.com/es-es/xm1r/raton-gaming?attribute%5Bcolor%5D=White" target="_blank">   
+                                59,90€
+                                </a>
+                            </li>
+                         </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td>6 productos</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

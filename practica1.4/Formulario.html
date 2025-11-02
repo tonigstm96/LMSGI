@@ -1,0 +1,77 @@
+<!--Debo decir que nunca había hecho un formulario, y no estaba matriculado cuando se explicó. Espero haberlo hecho correctamente-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Antonio Gutiérrez Simón">
+        <meta name="description" content="Práctica 1 HTML">
+        <title>Práctica 1</title>
+    </head>
+    <body>
+        <h1 id="inicio">LSMGI - Práctica 1 - FORMULARIO</h1>
+        <h3>Mapa Web</h3>
+        <p>
+            <a href="http://localhost/LMSGI/practica1.4/home.html">Home</a> | 
+            <a href="http://localhost/LMSGI/practica1.4/Tablas.html">Tabla</a> | 
+            <a href="http://localhost/LMSGI/practica1.4/Formulario.html">Formulario</a> | 
+            <a href="http://localhost/LMSGI/practica1.4/Howto.html">How to</a> | 
+            <a href="https://www.google.es" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google" width="80" height="30">
+            </a>
+        </p>
+        <h2>Formulario</h2>
+        <form action="gestion.php" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <p>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                </p>
+                <p>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                </p>
+                <p>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required pattern="[0-9]{9}" title="Introduzca un número de teléfono válido">
+                </p>   <!--Con el pattern hice que solo sea posible poner 9 dígitos. Si intentas introducir otros carácteres no te deja enviar el form. Con el title he intentado dar mas info al mensaje de error.-->
+            </fieldset>
+            <fieldset>
+                <legend>Otros datos</legend>
+            <p>
+                <input type="radio" id="hombre" name="genero" value="hombre" checked>
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="mujer" name="genero" value="mujer">
+                <label for="mujer">Mujer</label>
+            </p>
+            <p>
+                <input type="checkbox" id="musica" name="musica" value="musica">
+                <label for="musica">Música</label>
+                <input type="checkbox" id="juegos" name="juegos" value="juegos">
+                <label for="juegos">Juegos</label>
+            </p>
+            <p>
+                <label for="so">S.O.</label>
+                <select name="so" id="so" required>
+                    <option value="" disabled selected>--selecciona--</option>
+                    <option value="w10">Windows 10</option>
+                    <option value="w11">Windows 11</option>
+                    <option value="macos">MacOs</option>
+                    <option value="linux">Distribución Linux</option>
+                </select>
+            </p>
+            <p>
+                <label for="archivoimagen">Subir archivo:</label>
+                <input type="file" name="archivoimagen" id="archivoimagen" accept="image/*" required><!--Como indica la práctica he tenido que investigar como limitar el tipo de archivo, pero bueno, en esta práctica he tenido que buscarlo todo.-->
+                <input type="file" name="archivopdf" id="archivopdf" accept="application/pdf" required>
+            </p>
+            <p>
+                <textarea id="observaciones" name="observaciones" rows="15" cols="95" placeholder="Observaciones"></textarea>
+            </p>
+            </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </form>
+    </body>
+</html>
