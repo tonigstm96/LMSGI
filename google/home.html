@@ -1,33 +1,86 @@
+<!--He utilizado esta fuente para aprender a usar las fuentes de iconos de google. https://www.w3schools.com/icons/google_icons_intro.asp
+me ha servido para poder usar los iconos de la página de inicio de google, ya que fontawesome tenía parecidos pero eran de pago.-->
 <!DOCTYPE html>
 <html lang="es">
-<head>
-        <meta name="author" content="Antonio Gutiérrez Simón">
-        <meta name="description" content="Google">
-        <title>Google</title>
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="shortcut icon" href=media/img/favicon.png type="image/x-icon">
-</head>
-<body>
-    <header>
-        <div class="cabecera">
-            <ul class="navegacionIzqd">
-                <li class="cabecera__sobreGoogle">Sobre Google</li>
-                <li class="cabecera__tienda">Tienda</li>
-            </ul>
-            <ul class="navegacionDcha">
-                <li class="cabecera__gmail">Gmail</li>
-                <li class="cabecera__imagenes">Imágenes</li>
-                <li class="cabecera__menu">[menu]</li>
-                <li class="cabecera__button">Iniciar Sesión</li>
-            </ul>
-        </div>
-    </header>
-    <div class="logo">
-        <img class="google__logo" src="media/img/googleMain.gif" alt="Logo Google">
-        <img class="share" src="media/img/share.png" alt="Compartir">
-    </div>
-    <footer>
-
-    </footer>
-</body>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="author" content="Antonio Gutiérrez Simón">
+            <meta name="description" content="Google">
+            <title>Google</title>
+            <link rel="stylesheet" href="styles/styles.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            <link rel="shortcut icon" href=media/img/favicon.png type="image/x-icon">      
+    </head>
+    <body>
+        <header>
+            <nav class="cabecera">
+                <div>
+                    <ul>
+                        <li>Sobre Google</li>
+                        <li>Tienda</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Gmail</li>
+                        <li>Imágenes</li>
+                        <li class="cabecera__menu"><i class="material-icons">apps</i></li>
+                        <li class="cabecera__button">Iniciar Sesión</li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="centro">
+                <div class="logo">
+                    <img class="google__logo" src="media/img/googleMain.gif" alt="Logo Google">
+                    <i class="material-icons">share</i>
+                </div>
+                <div class="buscador">
+                    <i class="material-icons">search</i>
+                    <input type="text">
+                    <i class="material-icons">mic</i>
+                    <i class="material-icons">image_search</i>
+                    <div>
+                        <i class="material-icons">saved_search</i>
+                        <p>
+                            Modo IA
+                        </p>
+                    </div>
+            </div>
+            <div class="botones_busqueda">
+                <p>Buscar con Google</p>
+                <p>Voy a tener suerte</p>
+            </div>
+            <div class="idiomas">
+                <p>Ofrecido por Google en: 
+                    <span>català</span>
+                    <span>galego</span>
+                    <span>euskara</span>
+                </p>
+            </div>
+        </main>
+        <footer>
+            <div class="primera_mitad">
+                <p>
+                    España
+                </p>
+            </div>
+            <div class="segunda_mitad">
+                <ul class="segunda_mitad__izqda">
+                    <li>Publicidad</li>
+                    <li>Empresa</li>
+                    <li>Cómo funciona la búsqueda</li>
+                </ul>
+                <ul class="segunda_mitad__centro">
+                    <li><img src="media/img/hoja.png" alt="hoja">Tres décadas de acción climática: descubre lo que estamos haciendo</li>
+                </ul>
+                <ul class="segunda_mitad__dcha">
+                    <li>Privacidad</li>
+                    <li>Términos</li>
+                    <li>Configuración</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>

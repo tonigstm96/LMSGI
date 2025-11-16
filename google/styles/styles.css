@@ -1,65 +1,201 @@
-* {
+* { /*La fuente de google es ProductSans, pero no es de uso libre, asi que he usado roboto*/
+    margin: 0px;
+    padding: 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
-.share {
-    width: 15px;
-    height: 15px;
+body {
+    background-color: white;
 }
 
-
-.navegacionIzqd {
-    font-size: 1.3rem;
+.cabecera {
     display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: flex-start;
-    gap: 1rem;
-   
-}
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 12px 20px;
+}   
 
-.navegacionDcha {
-    font-size: 1.3rem;
+.cabecera ul {
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: flex-end;
-    gap: 1rem;
-   
+    align-items: center;
+    gap: 20px;
+    font-size: 0.9rem;
 }
-
-.cabecera__sobreGoogle:hover{
+/*En un principio use clases para aplicar el hover a cada uno de los apartados, pero luego vi que esta forma era mucho mas eficiente*/
+/*Por supuesto, para hacer una excepción al subrayado en el inicio de sesión tuve que investigar: https://es.stackoverflow.com/questions/135556/se-puede-a%C3%B1adir-excepciones-en-css*/
+.cabecera ul li:not(.cabecera__button):hover{
     text-decoration: underline;
     cursor: pointer;
 }
 
-.cabecera__tienda:hover{
-    text-decoration: underline;
-    cursor: pointer;
+.cabecera__menu {
+    color: #8A8D91;
+    padding: 0.3rem;
 }
 
-.cabecera__gmail:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.cabecera__imagenes:hover{
-    text-decoration: underline;
-    cursor: pointer;
+.cabecera__menu:hover{
+    background-color: #F2F2F2;
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+    padding: 0.3rem;
 }
 
 .cabecera__button {
-    background-color: blue;
+    background-color: #0B57D0;
     color: white;
     border: none;
     padding: 0.6rem 1.2rem;
     border-radius: 25px;
-    cursor: pointer;
     font-weight: 500;
-    transition: background-color 0.3s ease;
 }
 
 .cabecera__button:hover{
-    background-color:aquamarine;
+    box-shadow: 0 10px 12px rgba(0,0,0, 0.1);
+    transition: transform 0.2s ease; 
+    cursor: pointer;
+}
+
+.centro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10vh;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+}
+
+.logo i{
+    padding: 0.3rem;
+}
+
+.logo i:hover{
+    background-color: #F2F2F2;
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+    padding: 0.3rem;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    border: solid 0.5px #C2C6CA;
+    padding: 0.6rem 0.6rem;
+    border-radius: 40px;
+    gap: 1rem;
+    width: 42rem;
+    height: 2rem;
+}
+
+.buscador:hover {
+    box-shadow: -1px 3px 3px 3px rgba(0,0,0, 0.1);
+    transition: transform 0.3s ease; 
+}
+
+.buscador i:first-child{
+    color: #C2C6CA;
+}
+
+.buscador input {
+    width: 27rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+}
+
+.buscador div {
+    display: flex;
+    align-items: center;
+    background-color: #F3F5F6;
+    border-radius: 25px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    color: black;
+}
+
+.material-icons:hover {
+    cursor: pointer;
+}
+
+.botones_busqueda {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.botones_busqueda p {
+    border-radius: 5px;
+    background-color: #F8F9FA;
+    padding: 0.5rem 0.8rem;
+}
+
+.botones_busqueda p:hover {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    outline: solid 2px #F2F2F2;
+}
+
+.idiomas {
+    padding-top: 4vh;
+    font-size: 0.8rem;
+}
+
+.idiomas span {
+    cursor: pointer;
+    color: blue;
+}
+
+footer { /* Fuente: https://es.stackoverflow.com/questions/25743/c%C3%B3mo-crear-un-footer-que-se-adapte-en-la-parte-inferior*/
+    position: absolute;
+    bottom: 0;
+    background-color: #F2F2F2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.primera_mitad {
+    border-bottom: solid 0.7px #C2C6CA;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    padding-left: 2rem;
+}
+
+.segunda_mitad {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.segunda_mitad ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+.segunda_mitad ul li img {
+    width: 12px;
+    height: 14px;
+}
+
+.segunda_mitad ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
