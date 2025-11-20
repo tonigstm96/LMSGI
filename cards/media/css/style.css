@@ -137,3 +137,16 @@ main{
     gap: 10px;
     margin-top: 10px;
 }
+
+.card .details .cast ul li{
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.card .details .cast ul li img {
+    max-width: 100%;
+}
