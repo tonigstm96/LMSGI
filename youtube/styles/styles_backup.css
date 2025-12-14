@@ -1,10 +1,8 @@
 /*fuente para aprender algo más de grid: https://www.youtube.com/watch?v=QcYz949d8rM */
 /*blur https://www.youtube.com/watch?v=9nta9-bsMiw*/
 /*scroll en desktop de barra lateral y body https://stackoverflow.com/questions/32169383/how-to-scroll-2-divs-separately-using-full-height-of-browser*/
-/*webkit box y line clamp https://stackoverflow.com/questions/63376172/how-can-i-use-webkit-line-clamp*/
+/*webkit box y line clamp*/
 /*tuve que refactorizar los shorts a ultima hora porque los definí bastante mal en html, me quité 300 lineas de codigo pero 3 horas de tiempo*/
-/*he intentado ordenar el código 1 estilos generales, 2 estilos <767px 3 estilos tablet... pero solo he conseguido cargármelo
-siento que esté el codigo sucio, soy consciente de ello*/
 /*Me he valido del modo inspeccionar de chrome para realizar la mayoría del trabajo, con esto, me parece que grid es hasta más fácil
 que usar el flex, o por lo menos controlarlo.*/
 *{
