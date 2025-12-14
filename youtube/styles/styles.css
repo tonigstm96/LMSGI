@@ -23,7 +23,7 @@ header {
     padding-left: 1rem;
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(40px);
-    z-index: 100;
+    z-index: 5;
 }
 
 .barra_principal nav ul {
