@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+nav ul li {
+    align-self: center;
+}
+
+nav ul li:nth-child(1) {
+    background-color: #0d0d0d;
+}
+
+nav ul li img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: solid 1px #0d0d0d;
+}
+
+nav ul li a {
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #400707;
+    color: #8c5b30;
+}
+
+nav ul li a:hover {
+    background-color: #8c241b;
+    transition: 0.3s ease;
+}
+
+main {
+    background-color: #730e20;
+    padding-top: 2rem;
+}
+
+.quienSoy {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    color: #8c5b30;
+}
+
+.quienSoy img{
+    justify-self: center;
+    width: 20rem;
+    height: 16rem;
+    grid-row: 1;
+    border-radius: 50%;
+}
+
+.quienSoy h2{
+    grid-row: 2;
+    justify-self: center;
+}
